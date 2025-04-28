@@ -43,6 +43,7 @@ React-Toastify<br><br>
 Before running this project locally, ensure you have the following installed:
 
 `git`
+`Node.js`
 
 ## 📦 Installation
 
