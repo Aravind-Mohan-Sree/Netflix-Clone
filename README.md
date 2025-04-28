@@ -1,58 +1,113 @@
-<<<<<<< HEAD
-# Netflix-Clone
-=======
-# React + TypeScript + Vite
+# Netflix Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## This is a Netflix clone built with React, Vite, TailwindCSS, Firebase, Redux, and TypeScript. The app is designed to provide a simple movie streaming interface similar to Netflix, featuring authentication with Firebase, video streaming using react-player, and state management via ContextAPI.
 
-Currently, two official plugins are available:
+## 🚀 Features<br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Authentication: Sign-up and login functionality using Firebase.
 
-## Expanding the ESLint configuration
+Video Streaming: Use of react-player to stream videos.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Responsive Design: TailwindCSS is used to ensure the app is responsive on all screen sizes.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+State Management: ContextAPI is used for global state management.
+
+Form Handling: Formik and Yup are used for form handling and validation.
+
+Notifications: User-friendly notifications using React-Toastify.<br><br>
+  
+## 🛠️ Tech Stack
+
+React
+
+Firebase
+
+TailwindCSS
+
+TypeScript
+
+Vite
+
+Formik & Yup
+
+React-Player
+
+React Router DOM
+
+React-Toastify<br><br>
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+Before running this project locally, ensure you have the following installed:
+
+`git`
+
+## 📦 Installation
+
+### Clone the Repository
+
+```
+git clone https://github.com/Aravind-Mohan-Sree/Netflix-Clone.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Navigate to the Project Directory
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
 ```
->>>>>>> ff15f44 (Initial commit)
+cd Netflix-Clone
+```
+
+### Install Dependencies
+
+```
+npm install
+```
+
+### Set Up Environment Variables
+
+Create a .env file in the root directory and configure the following:
+
+```
+VITE_FIREBASE_API_KEY=""
+VITE_FIREBASE_AUTH_DOMAIN=""
+VITE_FIREBASE_PROJECT_ID=""
+VITE_FIREBASE_STORAGE_BUCKET=""
+VITE_FIREBASE_MESSAGING_SENDER_ID=""
+VITE_FIREBASE_APP_ID=""
+```
+
+### Start the App
+
+```
+npm run dev
+```
+
+### Access the Application
+
+Open your browser and navigate to `http://localhost:PORT`.<br><br>
+
+## 📄 License
+
+This project is free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the project.
+Just make sure to give appropriate credit.
+
+## 🙌 Acknowledgements
+
+Thanks to:
+
+React
+
+Vite
+
+TailwindCSS
+
+Firebase
+
+Formik
+
+Yup
+
+Lucide React
+
+# Stream now!

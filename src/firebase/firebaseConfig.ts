@@ -3,12 +3,12 @@ import { getFirestore } from "@firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyATgMNtzHgRRr0HNKl1_mo_bOmwU5qHyko",
-  authDomain: "olx-clone-db823.firebaseapp.com",
-  projectId: "olx-clone-db823",
-  storageBucket: "olx-clone-db823.firebasestorage.app",
-  messagingSenderId: "336755333306",
-  appId: "1:336755333306:web:06f6b377123b5af206ca83",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
